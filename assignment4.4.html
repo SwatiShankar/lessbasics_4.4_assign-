@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Gradient</title>
+<style>
+.linear, .circle, .ellipse{
+	text-align: center;
+	height: 100px;
+	width: 150px;
+	border-radius: 10px;
+}
+div.linear {
+	background : red;
+	background : -webkit-linear-gradient(left, green ,red);
+	background : -o-linear-gradient(right,green,red);
+	background : -moz-linear-gradient(right,green,red);
+	background : linear-gradient(to right green,red);
+	float : left;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top: 20px;
+}
+div.circle {
+	background : red;
+	background : -webkit-radial-gradient(circle at top center , red , yellow, green);
+	background : -o-radial-gradient(circle at top center , red , yellow, green);
+	background : -moz-radial-gradient(circle at top center , red , yellow, green);
+	background : radial-gradient(circle at top center , red , yellow, green);
+	float : left;
+	margin-left: 30px;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top: 20px;
+}
+div.ellipse {
+	background : red;
+	background : -webkit-radial-gradient(at top center , red , yellow, green);
+	background : -o-radial-gradient(at top center , red , yellow, green);
+	background : -moz-radial-gradient(at top center , red , yellow, green);
+	background : radial-gradient(at top center , red , yellow, green);
+	float : left;
+	margin-left: 30px;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top: 20px;
+}
+p{
+	text-align: center;
+	padding-top: 25px;
+}
+</style>
+</head>
+<body>
+<!-- below div is to represent linear gradient -->
+<div class="linear">
+	<p>BOX</p>
+</div>
+
+<!-- below div is to represent circle gradient-->
+<div class="circle">
+	<p>BOX</p>
+</div>
+
+<!-- below div is to represent ellipse gradient-->
+<div class="ellipse">
+	<p>BOX</p>
+</div>
+
+</body>
+</html>
